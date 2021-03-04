@@ -2,11 +2,29 @@ import { people } from '../data/people.js'
 
 const mainElement = document.querySelector("#main")
 
-people.forEach((person) => {
+const mainHeader = document.createElement("header")
+
+const maleButton = document.createElement("button")
+maleButton.textContent = "Male Characters"
+mainHeader.appendChild(maleButton)
+
+maleButton.addEventListener("click", () => {
+    populateDOM(maleCharacters)
+})
+
+document.body.insertBefore(mainHeader, mainElement)
+
+const maleCharacters = people.filter(person => person.gender === "male")
+
+
+
+function populateDOM(characters){
+characters.forEach((person) => {
 
     const charFigure = document.createElement("figure")
     const charImg = document.createElement("img")
-    charImg.src = 'https://starwars-visualguide.com/assets/img/characters/${index + 1}.jpg'
+    let charNum = getLastNumber(person.url)
+    charImg.src = 'https://starwars-visualguide.com/assets/img/characters/${CharNum}.jpg'
     const charCaption = document.createElement('figcaption')
     charCaption.textContent = person.name
 
@@ -15,3 +33,17 @@ people.forEach((person) => {
 
     mainElement.appendChild(charFigure)
 })
+}
+
+function getLastNumber(url) {
+    let end = url.lastIndexOf("/")
+    let start = end - 2
+    if (url.charAt(start) === "/"){
+        start++
+    }
+    return url.slice(start, end)
+}
+
+
+
+console.log(maleCharacters)
