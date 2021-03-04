@@ -1,1 +1,1 @@
-console.log("main js now");
+import {}
