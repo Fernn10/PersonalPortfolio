@@ -19,7 +19,7 @@ const maleCharacters = people.filter(person => person.gender === "male")
 
 
 function populateDOM(characters){
-    removeChildren(mainElement)
+    removeChildren(mainElement) 
     characters.forEach((person) =>  {
     const charFigure = document.createElement("figure")
     const charImg = document.createElement("img")
