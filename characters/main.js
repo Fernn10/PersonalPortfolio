@@ -4,19 +4,16 @@ const mainElement = document.querySelector("#main")
 
 const mainHeader = document.createElement("header")
 
+document.body.insertBefore(mainHeader, mainElement)
+
 const maleButton = document.createElement("button")
 maleButton.textContent = "Male Characters"
 mainHeader.appendChild(maleButton)
-
-maleButton.addEventListener("click", () => {
-    populateDOM(maleCharacters)
-})
-
-document.body.insertBefore(mainHeader, mainElement)
+maleButton.addEventListener("click", () => {populateDOM(maleCharacters)})
 
 const maleCharacters = people.filter(person => person.gender === "male")
 
-
+//TODO: include a gender-none
 
 function populateDOM(characters){
     removeChildren(mainElement) 
