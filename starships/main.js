@@ -1,5 +1,5 @@
 import {starships} from '../data/starships.js'
-
+import {getLastNumber, removeChildren} from '../utils/index.js'
 console.log(starships.length) 
 
 const nav = document.querySelector('nav')
@@ -21,9 +21,14 @@ function populateNav(starships) {
 }
 
 function populateShipView(shipData) {
-    let shipNum = 9
+    removeChildren(shipView)
+    let shipNum = getLastNumber(shipData.url)
     let shipImage = document.createElement('img')
     shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
+    shipImage.addEventListener('error', (err) => {
+        console.log(`oops! got an image loading error!`)
+        shipImage.hidden = true
+    })
     shipView.appendChild(shipImage)
 }
 

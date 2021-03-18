@@ -22,7 +22,7 @@ function populateDOM(characters){
     const charFigure = document.createElement("figure")
     const charImg = document.createElement("img")
     let charNum = getLastNumber(person.url)
-    charImg.src = 'https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg'
+    charImg.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
     const charCaption = document.createElement('figcaption')
     charCaption.textContent = person.name
 
