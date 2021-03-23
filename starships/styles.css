@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(243, 232, 232);
 }
 
 li {
@@ -13,6 +13,25 @@ li {
 
 main{
     display: flex;
+    height: 100vh;
+}
+
+.shipView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    width: 200px;
+
+}
+
+img, nav {
+    position: relative;
+    z-index: 1;
 }
 
 a{
