@@ -1,3 +1,43 @@
 body{
-    background-color: green;
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+figure{
+    border-bottom: yellow 3px solid;
+}
+
+
+
+figcaption {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+button{
+    color: black;
+    background-color: rgb(252, 252, 61);
+    width: 250px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: white;
 }
