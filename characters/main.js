@@ -15,13 +15,18 @@ maleButton.addEventListener("click", () => {populateDOM(maleCharacters)})
 const maleCharacters = people.filter(person => person.gender === "male")
 
 const femaleButton = document.createElement("button")
-femaleButton.textContent = "female Characters"
+femaleButton.textContent = "Female Characters"
 mainHeader.appendChild(femaleButton)
 femaleButton.addEventListener("click", () => {populateDOM(femaleCharacters)})
 
 const femaleCharacters = people.filter(person => person.gender === "female")
 
+const otherButton = document.createElement("button")
+otherButton.textContent = "Other"
+mainHeader.appendChild(otherButton)
+otherButton.addEventListener("click", () => {populateDOM(otherCharacters)})
 
+const otherCharacters = people.filter(person => person.gender === "n/a")
 
 //TODO: include a gender-none
 

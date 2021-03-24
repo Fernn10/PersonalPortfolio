@@ -20,6 +20,9 @@ figure{
 }
 
 
+figcaption:hover{
+    color: yellow;
+}
 
 figcaption {
     color: white;
