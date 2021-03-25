@@ -15,7 +15,7 @@ header{
     color: white;
     font-family: 'Russo One', sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     border-bottom: solid yellow 8px;
 }
 
@@ -53,4 +53,10 @@ a{
     text-decoration: none;
     color: white;   
     font-size: 19px; 
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
 }

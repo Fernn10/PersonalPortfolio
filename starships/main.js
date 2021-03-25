@@ -6,6 +6,14 @@ const nav = document.querySelector('nav')
 const navList = document.querySelector('.navList')
 const shipView = document.querySelector('.shipView')
 
+const dialog = document.querySelector('.modal')
+const closeButton = document.querySelector('.modal-close')
+const modalBackground = document.querySelector('.modal-background')
+
+closeButton.addEventListener('click', () => { dialog.classList.toggle("is-active")})
+modalBackground.addEventListener('click', () => { dialog.classList.toggle("is-active")})
+
+
 //pick a item to filter it by: like name, model, manufacturer etc....
 function populateNav(starships) {
     starships.forEach(starship =>{
@@ -28,6 +36,7 @@ function populateShipView(shipData) {
     shipImage.addEventListener('error', (err) => {
         console.log(`oops! got an image loading error!`)
         shipImage.hidden = true
+        dialog.classList.toggle("is-active")
     })
     shipView.appendChild(shipImage)
 }
