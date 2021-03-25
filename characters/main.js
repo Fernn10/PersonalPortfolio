@@ -28,7 +28,7 @@ otherButton.addEventListener("click", () => {populateDOM(otherCharacters)})
 
 const otherCharacters = people.filter(person => person.gender === "n/a")
 
-//TODO: include a gender-none
+
 
 function populateDOM(characters){
     removeChildren(mainElement) 
