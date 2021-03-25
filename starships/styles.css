@@ -11,9 +11,17 @@ li {
     list-style-type: none;
 }
 
+header{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: solid yellow 8px;
+}
+
 main{
     display: flex;
-    height: 100vh;
+    
 }
 
 .shipView {
@@ -21,20 +29,28 @@ main{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    
+}
+
+img{
+    margin-right: 160px;
+    
 }
 
 nav {
     width: 200px;
-
+    font-family: 'Russo One', sans-serif;
+    
 }
 
 img, nav {
     position: relative;
     z-index: 1;
+    
 }
 
 a{
     text-decoration: none;
-    color: grey;    
+    color: white;   
+    font-size: 19px; 
 }

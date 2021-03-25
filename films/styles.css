@@ -7,6 +7,7 @@ header{
     color: white;
     font-size: 50px;
     text-align: center;
+    font-family: 'Russo One', sans-serif;
 }
 body {
     background-color: black;
@@ -23,6 +24,8 @@ figure {
 
 figcaption {
     text-align: center;
-    background-color: grey;
-    color: white;
+    background-color:yellow;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
 }
