@@ -1,0 +1,8 @@
+html {
+    background-color: beige;
+}
+
+figcaption {
+    border-bottom: red 1px solid;
+    width: 100px;
+}
