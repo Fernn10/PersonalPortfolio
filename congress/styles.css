@@ -1,8 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     background-color: beige;
 }
 
+.congressGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 figcaption {
-    border-bottom: red 1px solid;
-    width: 100px;
+    border-bottom: gray 1px solid;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.figureDiv {
+    margin: 1rem;
+    box-shadow: 5px 3px 3px gray;
 }

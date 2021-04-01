@@ -16,6 +16,7 @@ birthdayButton.addEventListener('click', () => {
 function populateCongressGrid(simplePeople) {
     simplePeople.forEach(person => {
         let personDiv = document.createElement('div')
+        personDiv.className = 'figureDiv'
         let personFig = document.createElement('figure')
         let figImg = document.createElement('img')
         let figCaption = document.createElement('figcaption')
@@ -37,7 +38,7 @@ function getSimplifiedCongress(congressPeople) {
         return {
             id: person.id,
             name: `${person.first_name} ${middleName} ${person.last_name}`,
-            imgURL: `https://www.govtrack.us/static/legislator-photos/${person.govtrack_id}-100px.jpeg`
+            imgURL: `https://www.govtrack.us/static/legislator-photos/${person.govtrack_id}-200px.jpeg`
         }
     })
 }
