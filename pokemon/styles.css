@@ -52,3 +52,7 @@ html{
     background-color: blue;
     transform: rotateY(180deg);
 }
+
+.submitButton {
+    color: red;
+}
