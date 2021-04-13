@@ -16,7 +16,7 @@ html{
 
 .scene {
     width: 200px;
-    height: 200px;
+    height: 260px;
     border: 1px orange solid;
     margin: 10px;
     perspective: 600px;
@@ -53,6 +53,6 @@ html{
     transform: rotateY(180deg);
 }
 
-.submitButton {
+#submitButton {
     color: red;
 }
