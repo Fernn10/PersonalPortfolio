@@ -45,7 +45,7 @@ html{
 }
 
 .card__face--front {
-    background-color: red;
+    background-color: rgb(198, 214, 245);
 }
 
 .card__face--back {
