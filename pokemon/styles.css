@@ -48,6 +48,11 @@ html{
     background-color: rgb(198, 214, 245);
 }
 
+.card__face--front img {
+    height: 190px;
+    width: 190px;
+}
+
 .card__face--back {
     background-color: blue;
     transform: rotateY(180deg);
