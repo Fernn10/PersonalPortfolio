@@ -61,3 +61,27 @@ html{
 #submitButton {
     color: red;
 }
+
+.grass {
+    box-shadow: 10px 5px 5px green;
+}
+
+.fire {
+    box-shadow: 10px 5px 5px red;
+}
+
+.water {
+    box-shadow: 10px 5px 5px blue;
+}
+
+.bug {
+    box-shadow: 10px 5px 5px lawngreen;
+}
+
+.normal{
+    box-shadow: 10px 5px 5px beige;
+}
+
+.flying {
+    box-shadow: 10px 5px 5px aqua;
+}
