@@ -104,11 +104,12 @@ function populateCardFront(pokemon) {
     let pokeType1 = pokemon.types[0].type.name
     if (pokemon.types.length > 1) {
         let pokeType2 = pokemon.types[1].type.name
-        pokeFront.style.setProperty('background',`linear-gradient(${getPokeTypeColor(pokeType1)}, ${getPokeTypeColor(pokeType2)})`)
-    }else {
+        pokeFront.style.setProperty('background',`linear-gradient(${getPokeTypeColor(pokeType1)}, ${getPokeTypeColor(pokeType2)})`,
+        )
+    } else {
             pokeFront.style.setProperty('background', getPokeTypeColor(pokeType1))
         }
-}
+
 
 
     pokeFront.appendChild(frontLabel)
