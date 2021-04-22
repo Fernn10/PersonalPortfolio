@@ -5,21 +5,45 @@
 }
 
 html{
-    background-color: beige;
+    height: 100%;
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to bottom, grey, black);
+    border-bottom: solid rgb(255, 203, 5) 5px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, grey, black);
+    height: 100vh;
+}
+
+.title {
+    color: rgb(231, 231, 135);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    border-bottom: solid rgb(255, 203, 5) 5px;
 }
 
 .pokeGrid{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0px 40px 0px 40px;
 }
 
 .scene {
     width: 200px;
     height: 260px;
-    border: 1px orange solid;
     margin: 10px;
     perspective: 600px;
+    
 }
 
 .card {
@@ -29,6 +53,7 @@ html{
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    
 }
 
 .card.is-flipped {
@@ -42,10 +67,18 @@ html{
     text-align: center;
     font-weight: bold;
     backface-visibility:hidden;
+    
 }
 
 .card__face--front {
-    background-color: rgb(198, 214, 245);
+    background-color: rgb(145, 145, 123);
+    border-radius: 6px;
+    border-bottom: rgb(255, 203, 5) 4px solid;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 15px;
+    box-shadow: rgb(71, 71, 71) 5px 10px;
 }
 
 .card__face--front img {
@@ -54,11 +87,34 @@ html{
 }
 
 .card__face--back {
-    background-color: blue;
+    background-color: rgb(118, 155, 189);
     transform: rotateY(180deg);
+    border-radius: 6px;
+    border-bottom: rgb(42, 117, 187) 4px solid;
+    align-items: center;
+    text-align: center;
+    padding-top: 95px;
+    color: white;
+    box-shadow: rgb(71, 71, 71) 5px 10px;
 }
 
 #submitButton {
     color: red;
 }
 
+.loadPokemon, #fetchSelectedPokemon, #newPokemon {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(42, 117, 187);
+    border-radius: 5px;
+    border: 1px solid ;
+    margin: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+p {
+    padding-bottom: 13px;
+}
