@@ -154,3 +154,16 @@ p {
 .pokemonLogo:hover{
     transform: translateY(-10px);
 }
+
+.homeButton{
+   margin-left: 50px;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(42, 117, 187);
+    border-radius: 5px;
+    border: 1px solid ;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+        
+}
