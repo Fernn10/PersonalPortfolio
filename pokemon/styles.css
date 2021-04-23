@@ -151,10 +151,6 @@ p {
 }
 
 
-.pokemonLogo{
-
-}
-
 .pokemonLogo:hover{
     transform: translateY(-10px);
 }
