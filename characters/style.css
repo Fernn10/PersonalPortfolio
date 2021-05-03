@@ -2,7 +2,15 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-header{
+.headerr{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    border-bottom: solid yellow 8px;
+}
+
+header {
     color: white;
     font-size: 50px;
     text-align: center;

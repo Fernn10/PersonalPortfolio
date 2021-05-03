@@ -11,14 +11,13 @@ html{
 
 header {
     text-align: center;
-    background-image: linear-gradient(to bottom, grey, black);
-    border-bottom: solid rgb(255, 203, 5) 5px;
+    border-bottom: solid rgb(238, 214, 120) 8px;
     margin-bottom: 10px;
 }
 
 body {
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, grey, black);
+    background-image: linear-gradient(to bottom, rgb(42, 117, 187),black, black);
     height: 100vh;
 }
 
@@ -27,10 +26,6 @@ body {
     transition: transform 250ms;
 }
 
-
-.title {
-    border-bottom: solid rgb(255, 203, 5) 5px;
-}
 
 .pokeGrid{
     display: flex;
@@ -76,12 +71,12 @@ body {
 .card__face--front {
     background-color: rgb(145, 145, 123);
     border-radius: 6px;
-    border-bottom: rgb(255, 203, 5) 4px solid;
+    border-bottom: rgb(238, 214, 120) 4px solid;
     color: white;
     font-size: 21px;
     font-weight: bold;
     padding-top: 15px;
-    box-shadow: rgb(71, 71, 71) 5px 10px;
+    box-shadow: rgb(59, 59, 59) 5px 10px;
     transition: transform 250ms;
 }
 
@@ -111,10 +106,10 @@ body {
 .loadPokemon, #fetchSelectedPokemon, #newPokemon {
     width: 150px;
     height: 60px;
-    background-color: rgb(42, 117, 187);
+    background-image: linear-gradient(to bottom, rgb(42, 117, 187), rgb(127, 131, 90));
     border-radius: 5px;
     border: 1px solid ;
-    margin: 30px 90px;
+    margin: 10px 60px;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -159,11 +154,16 @@ p {
    margin-left: 50px;
     width: 120px;
     height: 30px;
-    background-color: rgb(42, 117, 187);
+    background-image: linear-gradient(to bottom, rgb(27, 28, 29), rgb(0, 0, 0));
     border-radius: 5px;
     border: 1px solid ;
     color: white;
     font-size: 14px;
     font-weight: bold;
         
+}
+
+.homeButtonDiv{
+    width: 40px;
+    padding-bottom: 10px;
 }

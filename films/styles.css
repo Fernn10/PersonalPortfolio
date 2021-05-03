@@ -8,6 +8,7 @@ header{
     font-size: 50px;
     text-align: center;
     font-family: 'Russo One', sans-serif;
+    border-bottom: solid yellow 8px;
 }
 body {
     background-color: black;
