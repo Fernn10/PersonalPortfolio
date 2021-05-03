@@ -9,7 +9,8 @@ scroll-behavior: smooth;
 
 
 body{
-    background-color:#C5C6c7;
+    background-image:radial-gradient(farthest-corner at 40px 40px,
+    rgb(37, 37, 37) 0%, rgb(220, 232, 245) 100%);
     font-family: 'Lexend Mega', sans-serif;
     
 }
@@ -21,11 +22,6 @@ body{
     
 }
 
-.navList a {
- color: #1F2833;
-font-family: Arial, Helvetica, sans-serif;
-}
-
 .navList a:hover{
     background-color: #C5C6c7;
 }
@@ -34,15 +30,19 @@ font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     z-index: 10;
     width: 100%;
-    background-color: #66FCF1;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4)
-    
+    background-image:linear-gradient(to right, #0B0C10, #1F2833);
+    box-shadow: inset 0 -2px 5px rgb(0 0 0 / 35%);
+    border-bottom: solid black 4px;
 }
 
 .navList a {
     display: block;
     font-size: 1.5em;
     padding: .65em .5em;
+    color: white;
+    font-family: 'Lexend Mega', sans-serif;
+    
+    border-right: white 1px solid;
 }
 
 #welcome-section{
@@ -64,20 +64,30 @@ h1 {
 p {
     color:white;
     font-size: 1.6rem;
+    position: relative;
+    animation: mymove 1.5s ;
+    animation-timing-function: ease-in;    
 }
+
+
+@keyframes mymove {
+    from {left: -90px;}
+    to {left: 0px;}
+  }
 
 #projects{
     
     text-align: center;
     padding: 10rem 2rem;
     background: var(--main-blue);
+    
 }
 
 #projects h2 {
     color:#1F2833;
     margin-bottom: 30px;
-    font-size: 30px;
-    border-bottom: #66FCF1 3px solid;
+    font-size: 2.5rem;
+    border-bottom: #66FCF1 6px solid;
 }
 
 .projects-grid {
@@ -104,7 +114,7 @@ p {
 
 
 .project-image {
-   
+    margin-bottom: -4.5px;
     height: calc(100% - 6.8rem);
     width: 100%;
     object-fit: cover;
@@ -114,11 +124,20 @@ figcaption {
     align-items: center;
     text-align: center;
     font-size: 25px;
+    border-bottom: 4px #66fcf1 solid;
+    
+    
+}
+
+figure{
+    box-shadow: 10px 5px 5px grey;
     
 }
 
 figure:hover {
     color: #66FCF1;
+    transition: transform 250ms;
+    transform: translateY(-10px);
 }
 
 a {
@@ -144,8 +163,7 @@ a {
     width: 100%;
     max-width: 980px;
     margin-top: 4rem;
-    
-    
+
 }
 
 .contact-text h2{
@@ -157,10 +175,13 @@ a {
 .contact-links a {
     color:#66FCF1;
     font-size: 21px;
+    
 }
 
 .contact-links a:hover{
     color: #C5C6c7;
+    transition: transform 250ms;
+    transform: translateY(-10px);
 }
 
 
@@ -190,3 +211,4 @@ footer{
     padding: 2rem;
     height: 10vh;
 }
+
