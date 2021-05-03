@@ -23,7 +23,7 @@ body{
 }
 
 .navList a:hover{
-    background-color: #C5C6c7;
+    background-color: #66fcf1;
 }
 
 #navbar{
@@ -41,7 +41,6 @@ body{
     padding: .65em .5em;
     color: white;
     font-family: 'Lexend Mega', sans-serif;
-    
     border-right: white 1px solid;
 }
 
@@ -84,10 +83,12 @@ p {
 }
 
 #projects h2 {
-    color:#1F2833;
+    color:white;
+    padding-bottom:5px ;
     margin-bottom: 30px;
     font-size: 2.5rem;
     border-bottom: #66FCF1 6px solid;
+    border-radius: 20px;
 }
 
 .projects-grid {
@@ -125,17 +126,21 @@ figcaption {
     text-align: center;
     font-size: 25px;
     border-bottom: 4px #66fcf1 solid;
-    
-    
+    color: white;
+    background-image:linear-gradient(to right, #0B0C10, #1F2833);
+}
+
+figcaption:hover{
+    color: #66FCF1;
 }
 
 figure{
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 10px 5px 5px  rgb(68, 68, 68);
     
 }
 
 figure:hover {
-    color: #66FCF1;
+    box-shadow: 10px 5px 5px #66fcf1;
     transition: transform 250ms;
     transform: translateY(-10px);
 }
